@@ -12,7 +12,7 @@
 
 @echo Configuring Version and URLs
 @echo ----------------------------
-set VERSION=1.29.0
+set VERSION=1.30.0
 set URL_JS=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/prism.min.js
 set URL_CSS=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/themes/prism.min.css
 
@@ -32,8 +32,8 @@ set URL_LANG_SHELL=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/pri
 
 @echo Configuring Target Directories and Files
 @echo ----------------------------------------
-set TARGET_JS_DIR=../wwwroot/js/prismjs
-set TARGET_CSS_DIR=../wwwroot/css/prismjs
+set TARGET_JS_DIR=../wwwroot/js
+set TARGET_CSS_DIR=../wwwroot/css
 
 set TARGET_JS_FILE=%TARGET_JS_DIR%/prism.min.js
 set TARGET_CSS_FILE=%TARGET_CSS_DIR%/prism.min.css
