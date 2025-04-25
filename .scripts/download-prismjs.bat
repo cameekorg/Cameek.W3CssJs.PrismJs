@@ -27,13 +27,18 @@ set URL_LANG_JSON=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/pris
 set URL_LANG_XML=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-xml-doc.min.js
 set URL_LANG_JAVASCRIPT=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-javascript.min.js
 set URL_LANG_SHELL=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-shell-session.min.js
+
+:: License
+set URL_LICENSE=https://raw.githubusercontent.com/PrismJS/prism/v%VERSION%/LICENSE
+
 @echo.
 @echo.
 
 @echo Configuring Target Directories and Files
 @echo ----------------------------------------
-set TARGET_JS_DIR=../wwwroot/js
-set TARGET_CSS_DIR=../wwwroot/css
+set TARGET_WWW_DIR=../wwwroot
+set TARGET_JS_DIR=%TARGET_WWW_DIR%/js
+set TARGET_CSS_DIR=%TARGET_WWW_DIR%/css
 
 set TARGET_JS_FILE=%TARGET_JS_DIR%/prism.min.js
 set TARGET_CSS_FILE=%TARGET_CSS_DIR%/prism.min.css
@@ -47,6 +52,8 @@ set TARGET_LANG_JSON=%TARGET_JS_DIR%/prism-json.min.js
 set TARGET_LANG_XML=%TARGET_JS_DIR%/prism-xml-doc.min.js
 set TARGET_LANG_JAVASCRIPT=%TARGET_JS_DIR%/prism-javascript.min.js
 set TARGET_LANG_SHELL=%TARGET_JS_DIR%/prism-shell-session.min.js
+
+set TARGET_LICENSE=%TARGET_WWW_DIR%/LICENSE-prismjs.txt
 @echo.
 @echo.
 
@@ -73,6 +80,9 @@ curl -o %TARGET_LANG_JSON% %URL_LANG_JSON%
 curl -o %TARGET_LANG_XML% %URL_LANG_XML%
 curl -o %TARGET_LANG_JAVASCRIPT% %URL_LANG_JAVASCRIPT%
 curl -o %TARGET_LANG_SHELL% %URL_LANG_SHELL%
+
+:: License
+curl -o %TARGET_LICENSE% %URL_LICENSE%
 @echo.
 @echo.
 
