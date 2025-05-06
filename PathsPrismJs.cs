@@ -20,6 +20,18 @@ public class PathsPrismJs
     public static string PrismMinJs => "_content/Cameek.W3CssJs.PrismJs/js/prism.min.js";
 
     /// <summary>
+    /// PrismJS plugin file for line numbers CSS
+    /// <code>_content/Cameek.W3CssJs.PrismJs/css/prism-line-numbers.min.css</code>
+    /// </summary>
+    public static string PrismLineNumbersMinCss => "_content/Cameek.W3CssJs.PrismJs/css/prism-line-numbers.min.css";
+
+    /// <summary>
+    /// PrismJS plugin file for line numbers JavaScript
+    /// <code>_content/Cameek.W3CssJs.PrismJs/js/prism-line-numbers.min.js</code>
+    /// </summary>
+    public static string PrismLineNumbersMinJs => "_content/Cameek.W3CssJs.PrismJs/js/prism-line-numbers.min.js";
+
+    /// <summary>
     /// PrismJS language file for C# syntax
     /// <code>_content/Cameek.W3CssJs.PrismJs/js/prism-csharp.min.js</code>
     /// </summary>
