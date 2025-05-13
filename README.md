@@ -53,7 +53,6 @@ Or reference it in your `.csproj`:
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-cpp.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-csharp.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-css.min.js"></script>
-<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-html.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-java.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-javascript.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-json.min.js"></script>
