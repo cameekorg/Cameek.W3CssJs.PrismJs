@@ -43,13 +43,30 @@ Or reference it in your `.csproj`:
 <link href="_content/Cameek.W3CssJs.PrismJs/css/prism.min.css" rel="stylesheet" />
 <link href="_content/Cameek.W3CssJs.PrismJs/css/prism-line-numbers.min.css" rel="stylesheet" />
 
+<link href="_content/Cameek.W3CssJs.PrismJs/css/prism.min.css" rel="stylesheet" />
+<link href="_content/Cameek.W3CssJs.PrismJs/css/prism-line-numbers.min.css" rel="stylesheet" />
+
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-line-numbers.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-batch.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-c.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-cpp.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-csharp.min.js"></script>
-<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-xml-doc.min.js"></script>
-<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-json.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-css.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-html.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-java.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-javascript.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-json.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-kotlin.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-php.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-powershell.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-properties.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-python.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-ruby.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-shell-session.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-sql.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-xml-doc.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-yaml.min.js"></script>
 ```
 
 2. Use PrismJS-friendly markup:
