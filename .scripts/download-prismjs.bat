@@ -26,7 +26,7 @@ set URL_LANG_C=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-c
 set URL_LANG_CPP=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-cpp.min.js
 set URL_LANG_CSHARP=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-csharp.min.js
 set URL_LANG_CSS=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-css.min.js
-set URL_LANG_HTML=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-html.min.js
+::::::set URL_LANG_HTML=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-html.min.js
 set URL_LANG_JAVA=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-java.min.js
 set URL_LANG_JAVASCRIPT=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-javascript.min.js
 set URL_LANG_JSON=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-json.min.js
@@ -74,7 +74,7 @@ set TARGET_LANG_C=%TARGET_JS_DIR%/prism-c.min.js
 set TARGET_LANG_CPP=%TARGET_JS_DIR%/prism-cpp.min.js
 set TARGET_LANG_CSHARP=%TARGET_JS_DIR%/prism-csharp.min.js
 set TARGET_LANG_CSS=%TARGET_JS_DIR%/prism-css.min.js
-set TARGET_LANG_HTML=%TARGET_JS_DIR%/prism-html.min.js
+::::::set TARGET_LANG_HTML=%TARGET_JS_DIR%/prism-html.min.js
 set TARGET_LANG_JAVA=%TARGET_JS_DIR%/prism-java.min.js
 set TARGET_LANG_JAVASCRIPT=%TARGET_JS_DIR%/prism-javascript.min.js
 set TARGET_LANG_JSON=%TARGET_JS_DIR%/prism-json.min.js
@@ -126,7 +126,7 @@ curl -o %TARGET_LANG_C% %URL_LANG_C%
 curl -o %TARGET_LANG_CPP% %URL_LANG_CPP%
 curl -o %TARGET_LANG_CSHARP% %URL_LANG_CSHARP%
 curl -o %TARGET_LANG_CSS% %URL_LANG_CSS%
-curl -o %TARGET_LANG_HTML% %URL_LANG_HTML%
+::::::curl -o %TARGET_LANG_HTML% %URL_LANG_HTML%
 curl -o %TARGET_LANG_JAVA% %URL_LANG_JAVA%
 curl -o %TARGET_LANG_JAVASCRIPT% %URL_LANG_JAVASCRIPT%
 curl -o %TARGET_LANG_JSON% %URL_LANG_JSON%
