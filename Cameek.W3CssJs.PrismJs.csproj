@@ -10,7 +10,7 @@
 
         <!-- NuGet Metadata -->
         <PackageId>Cameek.W3CssJs.PrismJs</PackageId>
-        <Version>1.30.4</Version>
+        <Version>1.30.5</Version>
         <Authors>Cameek</Authors>
         <Company>Cameek</Company>
         <Description>Static Razor Class Library with PrismJS assets for syntax highlighting in Blazor WebAssembly and Blazor Server apps.</Description>

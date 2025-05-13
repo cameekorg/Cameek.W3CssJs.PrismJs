@@ -48,6 +48,7 @@ Or reference it in your `.csproj`:
 
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-line-numbers.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-bash.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-batch.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-c.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-cpp.min.js"></script>

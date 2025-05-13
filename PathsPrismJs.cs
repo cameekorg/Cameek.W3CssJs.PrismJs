@@ -68,6 +68,12 @@ public class PathsPrismJs
     public static string PrismShellSessionMinJs => "_content/Cameek.W3CssJs.PrismJs/js/prism-shell-session.min.js";
 
     /// <summary>
+    /// PrismJS language file for Bash syntax
+    /// <code>_content/Cameek.W3CssJs.PrismJs/js/prism-bash.min.js</code>
+    /// </summary>
+    public static string PrismBashMinJs => "_content/Cameek.W3CssJs.PrismJs/js/prism-bash.min.js";
+    
+    /// <summary>
     /// PrismJS language file for Batch syntax
     /// <code>_content/Cameek.W3CssJs.PrismJs/js/prism-batch.min.js</code>
     /// </summary>

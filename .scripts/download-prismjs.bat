@@ -21,6 +21,7 @@ set URL_PLUGIN_LINE_NUMBERS_JS=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/pl
 set URL_PLUGIN_LINE_NUMBERS_CSS=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/plugins/line-numbers/prism-line-numbers.min.css
 
 :: Languages
+set URL_LANG_BASH=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-bash.min.js
 set URL_LANG_BATCH=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-batch.min.js
 set URL_LANG_C=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-c.min.js
 set URL_LANG_CPP=https://cdn.jsdelivr.net/npm/prismjs@%VERSION%/components/prism-cpp.min.js
@@ -69,6 +70,7 @@ set TARGET_CSS_FILE=%TARGET_CSS_DIR%/prism.min.css
 set TARGET_PLUGIN_LINE_NUMBERS_JS=%TARGET_JS_DIR%/prism-line-numbers.min.js
 set TARGET_PLUGIN_LINE_NUMBERS_CSS=%TARGET_CSS_DIR%/prism-line-numbers.min.css
 
+set TARGET_LANG_BASH=%TARGET_JS_DIR%/prism-bash.min.js
 set TARGET_LANG_BATCH=%TARGET_JS_DIR%/prism-batch.min.js
 set TARGET_LANG_C=%TARGET_JS_DIR%/prism-c.min.js
 set TARGET_LANG_CPP=%TARGET_JS_DIR%/prism-cpp.min.js
@@ -121,6 +123,7 @@ curl -o %TARGET_PLUGIN_LINE_NUMBERS_JS% %URL_PLUGIN_LINE_NUMBERS_JS%
 curl -o %TARGET_PLUGIN_LINE_NUMBERS_CSS% %URL_PLUGIN_LINE_NUMBERS_CSS%
 
 :: Languages
+curl -o %TARGET_LANG_BASH% %URL_LANG_BASH%
 curl -o %TARGET_LANG_BATCH% %URL_LANG_BATCH%
 curl -o %TARGET_LANG_C% %URL_LANG_C%
 curl -o %TARGET_LANG_CPP% %URL_LANG_CPP%
