@@ -98,6 +98,12 @@ public class PathsPrismJs
     public static string PrismKotlinMinJs => "_content/Cameek.W3CssJs.PrismJs/js/prism-kotlin.min.js";
 
     /// <summary>
+    /// PrismJS markup templating dependency; load before the PHP language file
+    /// <code>_content/Cameek.W3CssJs.PrismJs/js/prism-markup-templating.min.js</code>
+    /// </summary>
+    public static string PrismMarkupTemplatingMinJs => "_content/Cameek.W3CssJs.PrismJs/js/prism-markup-templating.min.js";
+
+    /// <summary>
     /// PrismJS language file for Python syntax
     /// <code>_content/Cameek.W3CssJs.PrismJs/js/prism-python.min.js</code>
     /// </summary>

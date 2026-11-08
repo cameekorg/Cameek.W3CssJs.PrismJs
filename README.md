@@ -7,13 +7,15 @@
 
 This library supports both Blazor WebAssembly and Blazor Server applications.
 
+Bundled upstream version: **PrismJS 1.30.0**, verified on 2026-11-08 as the [latest stable release](https://github.com/PrismJS/prism/releases/latest). The NuGet wrapper has its own version, currently **1.30.6**.
+
 ---
 
 ## ✨ Features
 
 - Includes PrismJS core + several languages (C#, XML, JSON, JavaScript, Shell, Java)
 - Includes PrismJS plugin for **line numbers**
-- Easy-to-use Razor component integration
+- Packages static assets for use by your own Razor components; no UI components are included
 - Ideal for code display, tutorials, or documentation in Blazor apps
 - Hosted under `_content/Cameek.W3CssJs.PrismJs` for use via static asset references
 
@@ -24,13 +26,13 @@ This library supports both Blazor WebAssembly and Blazor Server applications.
 Install from NuGet:
 
 ```bash
-dotnet add package Cameek.W3CssJs.PrismJs --version 1.30.0
+dotnet add package Cameek.W3CssJs.PrismJs --version 1.30.6
 ```
 
 Or reference it in your `.csproj`:
 
 ```xml
-<PackageReference Include="Cameek.W3CssJs.PrismJs" Version="1.30.0" />
+<PackageReference Include="Cameek.W3CssJs.PrismJs" Version="1.30.6" />
 ```
 
 ---
@@ -40,9 +42,6 @@ Or reference it in your `.csproj`:
 1. In your `index.html` (Blazor WebAssembly) or `_Host.cshtml` (Blazor Server), include:
 
 ```html
-<link href="_content/Cameek.W3CssJs.PrismJs/css/prism.min.css" rel="stylesheet" />
-<link href="_content/Cameek.W3CssJs.PrismJs/css/prism-line-numbers.min.css" rel="stylesheet" />
-
 <link href="_content/Cameek.W3CssJs.PrismJs/css/prism.min.css" rel="stylesheet" />
 <link href="_content/Cameek.W3CssJs.PrismJs/css/prism-line-numbers.min.css" rel="stylesheet" />
 
@@ -58,6 +57,7 @@ Or reference it in your `.csproj`:
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-javascript.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-json.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-kotlin.min.js"></script>
+<script src="_content/Cameek.W3CssJs.PrismJs/js/prism-markup-templating.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-php.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-powershell.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-properties.min.js"></script>
@@ -68,6 +68,8 @@ Or reference it in your `.csproj`:
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-xml-doc.min.js"></script>
 <script src="_content/Cameek.W3CssJs.PrismJs/js/prism-yaml.min.js"></script>
 ```
+
+Load `prism.min.js` first; it includes the markup, CSS, C-like, and JavaScript grammars. Load C before C++, Bash before shell-session, and markup-templating before PHP. XML/HTML highlighting uses the built-in markup grammar; xml-doc adds .NET XML documentation highlighting.
 
 2. Use PrismJS-friendly markup:
 
@@ -100,9 +102,31 @@ Where the component applies the `language-*` class and triggers JS highlighting 
 
 ---
 
+## Refreshing the bundled assets
+
+The CSS, JavaScript, and upstream license are checked into `wwwroot` and included in the NuGet package. Consumers do not need a CDN connection.
+
+To download the pinned PrismJS 1.30.0 assets again, run:
+
+```bash
+bash .scripts/download-prismjs.sh
+```
+
+On Windows, run `.scripts\download-prismjs.bat`. Both scripts use the versioned [jsDelivr npm distribution](https://cdn.jsdelivr.net/npm/prismjs@1.30.0/) and the license from the matching [upstream tag](https://github.com/PrismJS/prism/tree/v1.30.0). They download the core bundle, language components and dependencies, eight themes, the line-numbers plugin, and the license.
+
+Build the asset wrapper locally with:
+
+```bash
+dotnet pack Cameek.W3CssJs.PrismJs.csproj --configuration Release -p:GeneratePackageOnBuild=false
+```
+
+---
+
 ## 📄 License
 
 Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+PrismJS is also MIT-licensed; its bundled license is [wwwroot/LICENSE-prismjs.txt](wwwroot/LICENSE-prismjs.txt).
 
 ---
 

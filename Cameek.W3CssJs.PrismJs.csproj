@@ -10,10 +10,10 @@
 
         <!-- NuGet Metadata -->
         <PackageId>Cameek.W3CssJs.PrismJs</PackageId>
-        <Version>1.30.5</Version>
+        <Version>1.30.6</Version>
         <Authors>Cameek</Authors>
         <Company>Cameek</Company>
-        <Description>Static Razor Class Library with PrismJS assets for syntax highlighting in Blazor WebAssembly and Blazor Server apps.</Description>
+        <Description>Static Razor Class Library with PrismJS 1.30.0 assets for syntax highlighting in Blazor WebAssembly and Blazor Server apps.</Description>
         <PackageTags>blazor;prismjs;syntax-highlighting;razor-class-library;webassets</PackageTags>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/cameekorg/Cameek.W3CssJs.PrismJs</RepositoryUrl>
